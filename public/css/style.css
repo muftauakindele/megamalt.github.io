@@ -144,7 +144,9 @@ h2.heading-secondary.head-hero {
 }
 /*////////////////////////////
  Products */
-
+.products {
+  position: relative;
+}
 .pro-card {
   position: relative;
   border-radius: 3px;
@@ -170,6 +172,86 @@ h2.heading-secondary.head-hero {
   font-style: italic;
   color: rgba(255, 255, 255, 0.11);
 }
+.palm-tree {
+  position: absolute;
+  top: 30%;
+  right: -30%;
+  z-index: -9;
+  transition: all ease-in-out 0.3s;
+}
+/* .hideMe {
+  opacity: 0;
+}
+.fromRight {
+  transform: translateX(-10%);
+  top: 30%;
+  right: -10%;
+  opacity: 1 !important;
+} */
+
+/* .fromRight.appear,
+.fromLeft.appear {
+  transform: translateX(0);
+  -o-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  opacity: 1;
+}
+.from-left {
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+}
+
+.from-right {
+  transform: translateX(50%);
+  -o-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+}
+.fadeIn {
+  -webkit-animation: fadeIn 1.2s both;
+  -moz-animation: fadeIn 1.2s both;
+  -o-animation: fadeIn 1.2s both;
+  animation: fadeIn 1.2s both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
 
 .container .pro-card .imgBx {
   position: absolute;
