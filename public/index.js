@@ -12,6 +12,34 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 };
+/////////////////////////////////////////////////////////
+//Palm tree slide in
+
+const sliders = document.querySelectorAll(".slideIn");
+
+const appearOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px -65px 0px",
+};
+
+const appearOnScroll = new IntersectionObserver(function (
+  entries,
+  appearOnScroll
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("appear");
+      appearOnScroll.unobserve(entry.target);
+    }
+  });
+},
+appearOptions);
+
+sliders.forEach((slider) => {
+  appearOnScroll.observe(slider);
+});
 //////////////////////////////////////////////////////////
 // Accordion Animation
 const accordionItemHeaders = document.querySelectorAll(
@@ -46,63 +74,3 @@ allLinks.forEach(function (link) {
     }
   });
 });
-/////////////////////////////////////////////////////////
-//Palm Tree Animation
-// $(document).on("ready", function () {
-//   $(window).on("scroll", function () {
-//     $(".palm-tree").each(function (i) {
-//       let bottom_of_object = $(this).offset().top + $(this).outerHeight();
-//       let bottom_of_window = $(window).scrollTop() + $(window).height();
-//       if (bottom_of_window > bottom_of_object) {
-//         $(this).addClass(".fromRight");
-//       }
-//       if (bottom_of_window < bottom_of_object) {
-//         $(this).removeClass(".fromRight");
-//       }
-//     });
-//   });
-// });
-
-// const checkpoint = 300;
-
-// window.addEventListener("scroll", () => {
-//   const currentScroll = window.pageYOffset;
-//   if (currentScroll <= checkpoint) {
-//     opacity = 1 - currentScroll / checkpoint;
-//   } else {
-//     opacity = 0;
-//   }
-//   document.querySelector(".fromRight").style.opacity = opacity;
-// });
-
-//Faders
-// const faders = document.querySelectorAll(".fadeIn");
-// const sliders = document.querySelectorAll(".slideIn");
-
-// const appearOptions = {
-//   threshold: 0,
-//   rootMargin: "0px 0px -65px 0px",
-// };
-
-// const appearOnScroll = new IntersectionObserver(function (
-//   entries,
-//   appearOnScroll
-// ) {
-//   entries.forEach((entry) => {
-//     if (!entry.isIntersecting) {
-//       return;
-//     } else {
-//       entry.target.classList.add("appear");
-//       appearOnScroll.unobserve(entry.target);
-//     }
-//   });
-// },
-// appearOptions);
-
-// faders.forEach((fader) => {
-//   appearOnScroll.observe(fader);
-// });
-
-// sliders.forEach((slider) => {
-//   appearOnScroll.observe(slider);
-// });

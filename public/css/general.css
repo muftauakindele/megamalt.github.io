@@ -12,7 +12,7 @@ html {
   padding: 0;
 }
 
-html,
+/* html,
 body,
 div,
 span,
@@ -97,10 +97,10 @@ video {
   padding: 0;
   border: 0;
   vertical-align: baseline;
-}
+} */
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Spartan", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #3c1518;
@@ -114,9 +114,7 @@ i {
   border-radius: 50%;
   padding: 1rem;
 }
-/* .container-fluid {
-  padding: 0 !important;
-} */
+
 .hidden {
   opacity: 0;
 }
@@ -129,6 +127,7 @@ i {
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
+  font-family: "Spectral";
   font-weight: 700;
   color: #3c1518;
   letter-spacing: -0.5px;
@@ -164,7 +163,7 @@ i {
 .btn:link,
 .btn:visited {
   display: inline-block;
-
+  font-family: "Montserrat";
   font-size: 2rem;
   padding: 1.6rem 3.2rem;
   border-radius: 3px;
@@ -175,7 +174,6 @@ i {
 
   border: none;
   cursor: pointer;
-  font-family: inherit;
 }
 .btn--full:link,
 .btn--full:visited {

@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mega Malt</title>
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/general.css">
@@ -19,13 +19,13 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:ital,wght@0,400;0,500;0,700;1,300&family=Spartan:wght@300;400;500;600;700&family=Spectral:ital,wght@0,200;0,300;0,600;0,700;1,400&display=swap"
     rel="stylesheet">
   <!-- Icons -->
-  <script src="https://kit.fontawesome.com/e9b98175c7.js" crossorigin="anonymous" defer></script>
+  <script src="https://kit.fontawesome.com/e9b98175c7.js" crossorigin="anonymous"></script>
 </head>
 
 
 
 
-<body class="hidden container-fluid">
+<body class="hidden">
 
   <header class="header">
 
@@ -53,29 +53,20 @@
 
   </header>
   <main>
-    <section class="hero">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col" style="padding-right: 0;">
-            <div class="video-wrapper">
-              <video autoplay muted id="myVideo" class="hero-vid">
-                <source src="imgs/MMPT-VIDEO.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="hero-text">
-              <a href="#distributor" role="button" class="btn hero-btn btn--full">Become a Distributor</a>
-              <a href="#learn" role="button" class="btn hero-btn  btn--outline">Learn more <svg
-                  xmlns="http://www.w3.org/2000/svg" class="down-arrow" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z" />
-                </svg></a>
-            </div>
 
-          </div>
-        </div>
+    <section class="hero">
+      <video autoplay muted id="myVideo" class="hero-vid" src="imgs/MMPT-VIDEO.mp4"></video>
+
+      <div class="hero-text">
+        <a href="#distributor" role="button" class="btn btn--full">Become a Distributor</a>
+        <a href="#learn" role="button" class="btn btn--outline">Learn more <svg xmlns="http://www.w3.org/2000/svg"
+            class="down-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z" />
+          </svg></a>
       </div>
     </section>
+
     <section id="learn" class="statement">
       <div class="container">
         <div class="row">
@@ -130,8 +121,9 @@
           </div>
         </div>
 
-        <div class="palm-tree front"><img class="" src="imgs/1-palm-tree.png" alt=""></div>
-        <!-- <div class="palm-tree"></div> -->
+        <div class="palm-tree-rt slideIn fromRight"><img src="imgs/1-palm-tree.png" alt="Palm Tree"></div>
+        <div class="palm-tree-lt slideIn fromLeft"><img src="imgs/2-palm-tree.png" alt="Palm Tree"></div>
+
 
 
         <div class="row accordion">
@@ -247,6 +239,8 @@
             <img src="imgs/IMG_3811.png" alt="testimonial image">
             <img src="imgs/Frank-1.jpg" alt="testimonial image">
           </div>
+
+
           <div class="column">
             <video controls class="video" id="video" preload="metadata">
               <source src="imgs/IMG_0489.MOV">
@@ -259,6 +253,8 @@
             <img src="imgs/IMG_0260.png" alt="testimonial image">
             <img src="imgs/IMG_0242.JPEG" alt="testimonial image">
           </div>
+
+
           <div class="column">
             <img src="imgs/EYCN0408.JPG" alt="testimonial image">
             <video controls class="video" id="video" preload="metadata">
@@ -273,12 +269,15 @@
 
       </div>
     </section>
-    <section class="container cta">
-      <div class="row">
-        <div class="col text-center">
-          <button class="btn" href="#">Join the Mega family!</button>
+    <section class="container">
+      <div class="row cta-home">
+        <div class="col-auto text-center">
+          <h3 class="cta-head-home">Join the Mega Malt family!</h3>
         </div>
-
+        <div class="col-3 text-center">
+          <button class="btn cta-btn-home btn--full" href="#">Become a Distributor</button>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -297,19 +296,19 @@
         <div class="contacts">
           <div class="row cta-contact-textbox">
             <div class="col">
-              <i data-feather="phone"></i>
+              <i class="fa fa-solid fa-phone"></i>
               <a href="tel:832-886-5901" class="contact-textbox">832-886-5901</a>
             </div>
           </div>
           <div class="row cta-contact-textbox">
             <div class="col">
-              <i data-feather="mail"></i>
+              <i class="fa fa-solid fa-envelope"></i>
               <a href="mail:megamalt@yahoo.com" class="contact-textbox">megamalt@yahoo.com</a>
             </div>
           </div>
           <div class="row cta-contact-textbox">
             <div class="col">
-              <i data-feather="printer"></i>
+              <i class="fa fa-solid fa-print"></i>
               F:832-451-6103
             </div>
           </div>
@@ -338,11 +337,10 @@
 
 
 
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="/index.js"></script>
 </body>
 
