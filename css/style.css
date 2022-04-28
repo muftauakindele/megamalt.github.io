@@ -292,7 +292,7 @@ h2.heading-secondary.head-hero {
 }
 
 .container .pro-card:hover .contentBx {
-  height: 210px;
+  height: 220px;
 }
 
 .container .pro-card .contentBx h2 {
@@ -334,7 +334,6 @@ h2.heading-secondary.head-hero {
   display: inline-block;
   padding: 10px 20px;
   background: #ffffff;
-
   margin-top: 10px;
   text-decoration: none;
   font-weight: 600;
