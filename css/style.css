@@ -265,7 +265,14 @@ h2.heading-secondary.head-hero {
   transform: translateY(-25%);
   /* bug  */
 }
-
+.tap {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+}
 .bottle {
   position: absolute;
   top: 50%;
@@ -292,7 +299,7 @@ h2.heading-secondary.head-hero {
 }
 
 .container .pro-card:hover .contentBx {
-  height: 220px;
+  height: 225px;
 }
 
 .container .pro-card .contentBx h2 {

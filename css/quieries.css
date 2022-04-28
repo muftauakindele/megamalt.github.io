@@ -24,6 +24,9 @@
   .contact-textbox {
     font-size: 1.4rem;
   }
+  .tap {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 1000px) {
   .product-row {
