@@ -5,10 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" />
-    <link rel="icon" href="../imgs/MegaMalt-Logo-resize.png" />
-    <link rel="apple-touch-icon" href="../imgs/MegaMalt-Logo-appleicon.png" />
-    <link rel="manifest" href="../manifest.webmanifest" />
-    <title>Mega Malt</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../imgs/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../imgs/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../imgs/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -17,9 +31,9 @@
       crossorigin="anonymous"
     />
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <link rel="stylesheet" type="text/css" href="./css/general.css" />
-    <link rel="stylesheet" type="text/css" href="./css/quieries.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/general.css" />
+    <link rel="stylesheet" type="text/css" href="../css/quieries.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,6 +47,7 @@
       src="https://kit.fontawesome.com/e9b98175c7.js"
       crossorigin="anonymous"
     ></script>
+    <title>Home - Mega Malt</title>
   </head>
 
   <body class="hidden">
@@ -40,7 +55,7 @@
       <header class="header">
         <nav class="navbar">
           <a href="index.html">
-            <img class="logo" src="./imgs/MegaMalt-Logo.png" alt="Logo" />
+            <img class="logo" src="../imgs/MegaMalt-Logo.png" alt="Logo" />
           </a>
           <div class="menu-toggle" id="mobile-menu">
             <span class="bar"></span>
@@ -49,17 +64,30 @@
           </div>
           <ul class="nav">
             <li class="nav-item"><a href="index.html">Home</a></li>
-            <li class="nav-item"><a href="about.html">About</a></li>
-            <li class="nav-item"><a href="distributor.html">Join Us</a></li>
-            <li class="nav-item"><a href="#product">Products</a></li>
-            <li class="nav-item"><a href="#contact">Contact Us</a></li>
+            <li class="nav-item">
+              <a href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="distributor.html">Join Us</a>
+            </li>
+            <li class="nav-item"><a href="index.html#product">Products</a></li>
+            <li class="nav-item">
+              <a href="index.html#contact">Contact Us</a>
+            </li>
           </ul>
         </nav>
       </header>
       <main>
         <section class="hero">
           <div class="vid-wrapper">
-            <video autoplay muted loop src="./imgs/MMPT-VIDEO.mp4"></video>
+            <video
+              autoplay
+              muted
+              loop
+              controls
+              poster="/imgs/MMPT-VIDEO-0001.png"
+              src="../imgs/MMPT-VIDEO.mp4"
+            ></video>
           </div>
           <div class="hero-text">
             <a href="distributor.html" role="button" class="btn btn--full"
@@ -112,7 +140,7 @@
                 <div class="imgBx">
                   <img
                     class="bottle"
-                    src="./imgs/mega-bottle.png"
+                    src="../imgs/mega-bottle.png"
                     alt="Mega Malt bottle"
                   />
                 </div>
@@ -120,7 +148,7 @@
                   <h2>Mega Malt <br />11oz glass bottles</h2>
                   <div class="details">
                     <h3>20 ft. container</h3>
-                    <h3>1600 cases non-palletized</h3>
+                    <h3>1485 cases non-palletized</h3>
                     <h3>24 bottles per case</h3>
                     <h3>Case container (4) 6-pack wraps</h3>
                   </div>
@@ -131,7 +159,7 @@
                 <div class="imgBx">
                   <img
                     class="can"
-                    src="./imgs/mega-can.png"
+                    src="../imgs/mega-can.png"
                     alt="Mega Malt can"
                   />
                 </div>
@@ -139,7 +167,7 @@
                   <h2>Mega Malt <br />11oz aluminum cans</h2>
                   <div class="details">
                     <h3>20 ft. container</h3>
-                    <h3>2406 cases non-palletized</h3>
+                    <h3>2410 cases non-palletized</h3>
                     <h3>24 cans per case</h3>
                   </div>
                 </div>
@@ -149,14 +177,14 @@
             <div class="palm-tree-rt slideIn fromRight">
               <img
                 class="palm-img"
-                src="./imgs/1-palm-tree.png"
+                src="../imgs/1-palm-tree.png"
                 alt="Palm Tree"
               />
             </div>
             <div class="palm-tree-lt slideIn fromLeft">
               <img
                 class="palm-img"
-                src="./imgs/2-palm-tree.png"
+                src="../imgs/2-palm-tree.png"
                 alt="Palm Tree"
               />
             </div>
@@ -267,32 +295,47 @@
             </h2>
             <div class="row">
               <div class="column">
-                <img src="./imgs/IMG_0372.png" alt="testimonial image" />
-                <img src="./imgs/DNWJ6194.JPG" alt="testimonial image" />
-                <img src="./imgs/IMG_3811.png" alt="testimonial image" />
-                <img src="./imgs/Frank-1.jpg" alt="testimonial image" />
+                <img src="../imgs/IMG_0372.png" alt="testimonial image" />
+                <img src="../imgs/DNWJ6194.JPG" alt="testimonial image" />
+                <img src="../imgs/IMG_3811.png" alt="testimonial image" />
+                <img src="../imgs/Frank-1.jpg" alt="testimonial image" />
               </div>
 
               <div class="column">
-                <video controls class="video" preload="metadata">
-                  <source src="./imgs/IMG_0489.MOV" />
+                <video
+                  controls
+                  class="video"
+                  preload="metadata"
+                  poster="/imgs/IMG_0489-0001.png"
+                >
+                  <source src="../imgs/IMG_0489.MOV" />
                 </video>
-                <img src="./imgs/IMG_1078.JPG" alt="testimonial image" />
-                <img src="./imgs/IMG_7949.png" alt="testimonial image" />
-                <video controls class="video" preload="metadata">
-                  <source src="./imgs/NEHH0597.MOV" />
+                <img src="../imgs/IMG_1078.JPG" alt="testimonial image" />
+                <img src="../imgs/IMG_7949.png" alt="testimonial image" />
+                <video
+                  controls
+                  class="video"
+                  preload="metadata"
+                  poster="/imgs/NEHH0597-0001.png"
+                >
+                  <source src="../imgs/NEHH0597.MOV" />
                 </video>
-                <img src="./imgs/IMG_0260.png" alt="testimonial image" />
-                <img src="./imgs/IMG_0242.JPEG" alt="testimonial image" />
+                <img src="../imgs/IMG_0260.png" alt="testimonial image" />
+                <img src="../imgs/IMG_0242.JPEG" alt="testimonial image" />
               </div>
 
               <div class="column">
-                <img src="./imgs/EYCN0408.JPG" alt="testimonial image" />
-                <video controls class="video" preload="metadata">
-                  <source src="./imgs/RFAX5706.MOV" />
+                <img src="../imgs/EYCN0408.JPG" alt="testimonial image" />
+                <video
+                  controls
+                  class="video"
+                  preload="metadata"
+                  poster="/imgs/RFAX5706-0001.png"
+                >
+                  <source src="../imgs/RFAX5706.MOV" />
                 </video>
-                <img src="./imgs/XZBU5762.JPG" alt="testimonial image" />
-                <img src="./imgs/IMG_1075.JPG" alt="testimonial image" />
+                <img src="../imgs/XZBU5762.JPG" alt="testimonial image" />
+                <img src="../imgs/IMG_1075.JPG" alt="testimonial image" />
               </div>
             </div>
           </div>
@@ -303,12 +346,13 @@
               <h3 class="cta-head-home">Join the Mega Malt family!</h3>
             </div>
             <div class="col text-center">
-              <button
+              <a
+                role="button"
                 class="btn cta-btn-home btn--full"
                 href="distributor.html"
               >
                 Become a Distributor
-              </button>
+              </a>
             </div>
           </div>
         </section>
@@ -317,11 +361,12 @@
       <footer id="contact" class="container footer">
         <div class="row row-cols-2 row-cols-md-3 foot-box">
           <div class="col">
-            <img
-              class="foot-logo"
-              src="./imgs/MegaMalt-Logo-lg.png"
-              alt="logo"
-            />
+            <a href="index.html">
+              <img
+                class="foot-logo"
+                src="../imgs/MegaMalt-Logo-lg.png"
+                alt="logo"
+            /></a>
           </div>
           <div class="col">
             <div class="row">
@@ -341,13 +386,13 @@
               <div class="row cta-contact-textbox">
                 <div class="col">
                   <i class="fa fa-solid fa-envelope"></i>
-                  <a href="mail:megamalt@yahoo.com" class="contact-textbox"
+                  <a href="mailto:megamalt@yahoo.com" class="contact-textbox"
                     >megamalt@yahoo.com</a
                   >
                 </div>
               </div>
               <div class="row cta-contact-textbox">
-                <div class="col">
+                <div id="fax" class="col">
                   <i class="fa fa-solid fa-print"></i>
                   F:832-451-6103
                 </div>
@@ -362,7 +407,9 @@
             </div>
             <div class="row">
               <div class="col">
-                <i class="social fa-3x fa fa-facebook-square"></i>
+                <a href="https://www.facebook.com/mega.malt/"
+                  ><i class="social fa-3x fa fa-facebook-square"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -381,6 +428,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="../js/index.js"></script>
   </body>
 </html>

@@ -57,6 +57,9 @@
   section.hero div.hero-text a.btn.btn--outline {
     display: none;
   }
+  .all-cities .col {
+    flex: none;
+  }
 }
 @media screen and (max-width: 800px) {
   .column {
@@ -70,6 +73,9 @@
   .btn:link,
   .btn:visited {
     font-size: 1.5rem;
+  }
+  .about-hero {
+    background-position: 50% 33%;
   }
 }
 
@@ -125,7 +131,7 @@
   .about-description,
   .heading-description {
     font-size: 2rem;
-    line-height: 1.18;
+    line-height: 1.2;
   }
   .about-grid {
     text-align: left;
@@ -195,5 +201,31 @@
   .cta-imgbox,
   .cta-textbox {
     padding: 0 4rem 2rem 4rem;
+  }
+  .about-hero {
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 574px) {
+  #inquiry {
+    margin: 0 auto 0 12px;
+  }
+  .cta-contact-textbox,
+  .contact-textbox {
+    font-size: 1.2rem;
+  }
+  .footer {
+    margin: 8rem 7px 0;
+  }
+  .about-hero,
+  .dist-hero {
+    background-position: inherit;
+    background-attachment: inherit;
+  }
+}
+@media screen and (max-width: 450px) {
+  .palm-tree-rt,
+  .palm-tree-lt {
+    display: none;
   }
 }

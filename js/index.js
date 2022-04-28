@@ -1,17 +1,6 @@
 //FadeIn document
 document.body.className = "visible";
 
-// When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-  let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-9rem";
-  }
-  prevScrollpos = currentScrollPos;
-};
 /////////////////////////////////////////////////////////
 //Toggle Hambuger Menu
 $(".menu-toggle").on("click", function () {
@@ -60,24 +49,7 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
     }
   });
 });
-/////////////////////////////////////////////////////////
-//Smooth scrolling animation
-const allLinks = document.querySelectorAll("a:link");
 
-allLinks.forEach(function (link) {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
-    const href = link.getAttribute("href");
-    console.log(href);
-
-    //Link scroll function
-    if (href !== "#" && href.startsWith("#")) {
-      const sectionEl = document.querySelector(href);
-      console.log(sectionEl);
-      sectionEl.scrollIntoView({ behavior: "smooth" });
-    }
-  });
-});
 ///////////////////////////////////////////
 //Year
 const yearEL = document.querySelector(".year");

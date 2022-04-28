@@ -18,6 +18,8 @@ body {
   font-weight: 400;
   color: #3c1518;
   transition: all 0.3s ease-in-out;
+  overflow-y: auto;
+  overflow: hidden;
 }
 ol,
 ul {
