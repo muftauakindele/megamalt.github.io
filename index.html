@@ -1,451 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../imgs/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../imgs/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../imgs/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/site.webmanifest" />
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/style.css" />
-    <link rel="stylesheet" type="text/css" href="../css/general.css" />
-    <link rel="stylesheet" type="text/css" href="../css/quieries.css" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:ital,wght@0,400;0,500;0,700;1,300&family=Spartan:wght@300;400;500;600;700&family=Spectral:ital,wght@0,200;0,300;0,600;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Icons -->
-    <script
-      src="https://kit.fontawesome.com/e9b98175c7.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Home - Mega Malt</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../imgs/apple-touch-icon.webp" />
+  <link rel="icon" type="image/webp" sizes="32x32" href="../imgs/favicon-32x32.webp" />
+  <link rel="icon" type="image/webp" sizes="16x16" href="../imgs/favicon-16x16.webp" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/general.css" />
+  <link rel="stylesheet" type="text/css" href="../css/quieries.css" />
 
-  <body class="hidden">
-    <div class="wrap">
-      <header class="header">
-        <nav class="navbar">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:ital,wght@0,400;0,500;0,700;1,300&family=Spartan:wght@300;400;500;600;700&family=Spectral:ital,wght@0,200;0,300;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/e9b98175c7.js" crossorigin="anonymous"></script>
+  <title>Home - Mega Malt</title>
+</head>
+
+<body class="hidden">
+  <div class="wrap">
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html">
+          <img class="logo" src="../imgs/MegaMalt-Logo.webp" alt="Logo" />
+        </a>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item">
+            <a href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="distributor.html">Join Us</a>
+          </li>
+          <li class="nav-item"><a href="index.html#product">Products</a></li>
+          <li class="nav-item">
+            <a href="index.html#contact">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="vid-wrapper">
+          <video autoplay muted loop controls poster="/imgs/MMPT-VIDEO-0001.webp" src="../imgs/MMPT-VIDEO.webm"></video>
+        </div>
+        <div class="hero-text">
+          <a href="distributor.html" role="button" class="btn btn--full">Become a Distributor</a>
+          <a href="#learn" role="button" class="btn btn--outline">Learn more
+            <svg xmlns="http://www.w3.org/2000/svg" class="down-arrow" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z" /></svg></a>
+        </div>
+      </section>
+
+      <section id="learn" class="statement">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2 class="heading-secondary white-sec">MEGA MALT</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p class="heading-description">
+                Mega Malt is not just a beverage, it’s a lifestyle change. It
+                is a truly versatile malt beverage that can be enjoyed like
+                the popular colas, but with real nutritional value. With its
+                refined, slightly lighter, sweet taste, it’s smooth and silky,
+                perfect for lunch, dinner, or just for a casual drink.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="product" class="products">
+        <div class="container">
+          <h2 class="heading-secondary">PRODUCTS</h2>
+          <div class="row product-row">
+            <div class="pro-card col-4">
+              <div class="imgBx">
+                <img class="bottle" src="../imgs/mega-bottle.webp" alt="Mega Malt bottle" />
+                <span class="tap">Tap for details</span>
+              </div>
+              <div class="contentBx">
+                <h2>Mega Malt <br />11oz glass bottles</h2>
+                <div class="details">
+                  <h3>&ndash; 20 ft. container</h3>
+                  <h3>
+                    &ndash; 1485 cases <br />
+                    non-palletized
+                  </h3>
+                  <h3>&ndash; 24 bottles per case</h3>
+                  <h3>
+                    &ndash; Case container (4) <br />
+                    6-pack wraps
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="pro-card col-4">
+              <div class="imgBx">
+                <img class="can" src="../imgs/mega-can.webp" alt="Mega Malt can" />
+                <span class="tap">Tap for details</span>
+              </div>
+              <div class="contentBx">
+                <h2>Mega Malt <br />11oz aluminum cans</h2>
+                <div class="details">
+                  <h3>&ndash; 20 ft. container</h3>
+                  <h3>
+                    &ndash; 2410 cases <br />
+                    non-palletized
+                  </h3>
+                  <h3>&ndash; 24 cans per case</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="palm-tree-rt slideIn fromRight">
+            <img class="palm-img" src="../imgs/1-palm-tree.webp" alt="Palm Tree" />
+          </div>
+          <div class="palm-tree-lt slideIn fromLeft">
+            <img class="palm-img" src="../imgs/2-palm-tree.webp" alt="Palm Tree" />
+          </div>
+
+          <div class="row accordion">
+            <div class="col accordion-item">
+              <div class="accordion-item-header">
+                <h2>See nutrition comparisions</h2>
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  <table class="styled-table">
+                    <thead>
+                      <tr>
+                        <th>Beverage</th>
+                        <th>Energy<br />(kcal)</th>
+                        <th>Carbs<br />(ggrams)</th>
+                        <th>Fat<br />(grams)</th>
+                        <th>Protein<br />(mg)</th>
+                        <th>B-Complex<br />(mg)</th>
+                        <th>Calcium<br />(mg)</th>
+                        <th>Iron<br />(mg)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="active-row">
+                        <td>Mega Malt</td>
+                        <td>51</td>
+                        <td>12</td>
+                        <td>--</td>
+                        <td>0.31</td>
+                        <td>0.33</td>
+                        <td>--</td>
+                        <td>0.02</td>
+                      </tr>
+                      <tr>
+                        <td>Orange Juice</td>
+                        <td>44</td>
+                        <td>9.9</td>
+                        <td>0.1</td>
+                        <td>0.6</td>
+                        <td>0.06</td>
+                        <td>10</td>
+                        <td>0.18</td>
+                      </tr>
+                      <tr>
+                        <td>Milk</td>
+                        <td>49</td>
+                        <td>4.9</td>
+                        <td>1.6</td>
+                        <td>3.5</td>
+                        <td>0.04</td>
+                        <td>123</td>
+                        <td>0.33</td>
+                      </tr>
+                      <tr>
+                        <td>Coffee</td>
+                        <td>9</td>
+                        <td>0.3</td>
+                        <td>--</td>
+                        <td>0.2</td>
+                        <td>--</td>
+                        <td>2</td>
+                        <td>--</td>
+                      </tr>
+                      <tr>
+                        <td>Tea</td>
+                        <td>2</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>0.1</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>0.01</td>
+                      </tr>
+                      <tr>
+                        <td>Cola</td>
+                        <td>41</td>
+                        <td>10.1</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>0.04</td>
+                      </tr>
+                      <tr>
+                        <td>Beer</td>
+                        <td>38</td>
+                        <td>2.7</td>
+                        <td>--</td>
+                        <td>0.3</td>
+                        <td>--</td>
+                        <td>7</td>
+                        <td>0.038</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid testimonials">
+        <div class="container">
+          <h2 class="heading-secondary" style="color: #ffffff">
+            “ENJOY THE PREMIUM TASTE OF MEGA MALT!”
+          </h2>
+          <div class="row">
+            <div class="column">
+              <img src="../imgs/IMG_0372.webp" alt="testimonial image" />
+              <img src="../imgs/DNWJ6194.webp" alt="testimonial image" />
+              <img src="../imgs/IMG_3811.webp" alt="testimonial image" />
+              <img src="../imgs/IMG_0260.webp" alt="testimonial image" />
+              <video controls class="video" preload="metadata" poster="../imgs/IMG_3608-0001.webp">
+                <source src="../imgs/IMG_3608.webm" /></video><img src="../imgs/IMG_0242.webp"
+                alt="testimonial image" />
+            </div>
+
+            <div class="column">
+              <video controls class="video" preload="metadata" poster="../imgs/IMG_0489-0001.webp">
+                <source src="../imgs/IMG_0489.webm" />
+              </video>
+              <img src="../imgs/IMG_1078.webp" alt="testimonial image" />
+              <img src="../imgs/IMG_7949.webp" alt="testimonial image" />
+              <video controls class="video" preload="metadata" poster="../imgs/NEHH0597-0001.webp">
+                <source src="../imgs/NEHH0597.webm" />
+              </video>
+              <img src="../imgs/IMG_1075.webp" alt="testimonial image" />
+            </div>
+
+            <div class="column">
+              <img src="../imgs/EYCN0408.webp" alt="testimonial image" />
+              <video controls class="video" preload="metadata" poster="/imgs/RFAX5706-0001.webp">
+                <source src="../imgs/RFAX5706.webm" />
+              </video>
+              <img src="../imgs/XZBU5762.webp" alt="testimonial image" />
+              <img src="../imgs/Frank-1.webp" alt="testimonial image" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="row cta-home">
+          <div class="col-auto text-center">
+            <h3 class="cta-head-home">Join the Mega Malt family!</h3>
+          </div>
+          <div class="col text-center">
+            <a role="button" class="btn cta-btn-home btn--full" href="distributor.html">
+              Become a Distributor
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="container footer">
+      <div class="row row-cols-2 row-cols-md-3 foot-box">
+        <div class="col">
           <a href="index.html">
-            <img class="logo" src="../imgs/MegaMalt-Logo.png" alt="Logo" />
-          </a>
-          <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+            <img class="foot-logo" src="../imgs/MegaMalt-Logo-lg.webp" alt="logo" /></a>
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="col">
+              <h3 class="heading-tertiary h3">Contact Us:</h3>
+            </div>
           </div>
-          <ul class="nav">
-            <li class="nav-item"><a href="index.html">Home</a></li>
-            <li class="nav-item">
-              <a href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="distributor.html">Join Us</a>
-            </li>
-            <li class="nav-item"><a href="index.html#product">Products</a></li>
-            <li class="nav-item">
-              <a href="index.html#contact">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <section class="hero">
-          <div class="vid-wrapper">
-            <video
-              autoplay
-              muted
-              loop
-              controls
-              poster="/imgs/MMPT-VIDEO-0001.png"
-              src="../imgs/MMPT-VIDEO.mp4"
-            ></video>
-          </div>
-          <div class="hero-text">
-            <a href="distributor.html" role="button" class="btn btn--full"
-              >Become a Distributor</a
-            >
-            <a href="#learn" role="button" class="btn btn--outline"
-              >Learn more
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="down-arrow"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"
-                /></svg
-            ></a>
-          </div>
-        </section>
-
-        <section id="learn" class="statement">
-          <div class="container">
-            <div class="row">
+          <div class="contacts">
+            <div class="row cta-contact-textbox">
               <div class="col">
-                <h2 class="heading-secondary white-sec">MEGA MALT</h2>
+                <i class="fa fa-solid fa-phone"></i>
+                <a href="tel:832-886-5901" class="contact-textbox">832-886-5901</a>
               </div>
             </div>
-            <div class="row">
+            <div class="row cta-contact-textbox">
               <div class="col">
-                <p class="heading-description">
-                  Mega Malt is not just a beverage, it’s a lifestyle change. It
-                  is a truly versatile malt beverage that can be enjoyed like
-                  the popular colas, but with real nutritional value. With its
-                  refined, slightly lighter, sweet taste, it’s smooth and silky,
-                  perfect for lunch, dinner, or just for a casual drink.
-                </p>
+                <i class="fa fa-solid fa-envelope"></i>
+                <a href="mailto:megamalt@yahoo.com" class="contact-textbox">megamalt@yahoo.com</a>
               </div>
             </div>
-          </div>
-        </section>
-        <section id="product" class="products">
-          <div class="container">
-            <h2 class="heading-secondary">PRODUCTS</h2>
-            <div class="row product-row">
-              <div class="pro-card col-4">
-                <div class="imgBx">
-                  <img
-                    class="bottle"
-                    src="../imgs/mega-bottle.png"
-                    alt="Mega Malt bottle"
-                  />
-                  <span class="tap">Tap for details</span>
-                </div>
-                <div class="contentBx">
-                  <h2>Mega Malt <br />11oz glass bottles</h2>
-                  <div class="details">
-                    <h3>&ndash; 20 ft. container</h3>
-                    <h3>
-                      &ndash; 1485 cases <br />
-                      non-palletized
-                    </h3>
-                    <h3>&ndash; 24 bottles per case</h3>
-                    <h3>
-                      &ndash; Case container (4) <br />
-                      6-pack wraps
-                    </h3>
-                  </div>
-                </div>
-              </div>
-
-              <div class="pro-card col-4">
-                <div class="imgBx">
-                  <img
-                    class="can"
-                    src="../imgs/mega-can.png"
-                    alt="Mega Malt can"
-                  />
-                  <span class="tap">Tap for details</span>
-                </div>
-                <div class="contentBx">
-                  <h2>Mega Malt <br />11oz aluminum cans</h2>
-                  <div class="details">
-                    <h3>&ndash; 20 ft. container</h3>
-                    <h3>
-                      &ndash; 2410 cases <br />
-                      non-palletized
-                    </h3>
-                    <h3>&ndash; 24 cans per case</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="palm-tree-rt slideIn fromRight">
-              <img
-                class="palm-img"
-                src="../imgs/1-palm-tree.png"
-                alt="Palm Tree"
-              />
-            </div>
-            <div class="palm-tree-lt slideIn fromLeft">
-              <img
-                class="palm-img"
-                src="../imgs/2-palm-tree.png"
-                alt="Palm Tree"
-              />
-            </div>
-
-            <div class="row accordion">
-              <div class="col accordion-item">
-                <div class="accordion-item-header">
-                  <h2>See nutrition comparisions</h2>
-                </div>
-                <div class="accordion-item-body">
-                  <div class="accordion-item-body-content">
-                    <table class="styled-table">
-                      <thead>
-                        <tr>
-                          <th>Beverage</th>
-                          <th>Energy<br />(kcal)</th>
-                          <th>Carbs<br />(ggrams)</th>
-                          <th>Fat<br />(grams)</th>
-                          <th>Protein<br />(mg)</th>
-                          <th>B-Complex<br />(mg)</th>
-                          <th>Calcium<br />(mg)</th>
-                          <th>Iron<br />(mg)</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr class="active-row">
-                          <td>Mega Malt</td>
-                          <td>51</td>
-                          <td>12</td>
-                          <td>--</td>
-                          <td>0.31</td>
-                          <td>0.33</td>
-                          <td>--</td>
-                          <td>0.02</td>
-                        </tr>
-                        <tr>
-                          <td>Orange Juice</td>
-                          <td>44</td>
-                          <td>9.9</td>
-                          <td>0.1</td>
-                          <td>0.6</td>
-                          <td>0.06</td>
-                          <td>10</td>
-                          <td>0.18</td>
-                        </tr>
-                        <tr>
-                          <td>Milk</td>
-                          <td>49</td>
-                          <td>4.9</td>
-                          <td>1.6</td>
-                          <td>3.5</td>
-                          <td>0.04</td>
-                          <td>123</td>
-                          <td>0.33</td>
-                        </tr>
-                        <tr>
-                          <td>Coffee</td>
-                          <td>9</td>
-                          <td>0.3</td>
-                          <td>--</td>
-                          <td>0.2</td>
-                          <td>--</td>
-                          <td>2</td>
-                          <td>--</td>
-                        </tr>
-                        <tr>
-                          <td>Tea</td>
-                          <td>2</td>
-                          <td>--</td>
-                          <td>--</td>
-                          <td>0.1</td>
-                          <td>--</td>
-                          <td>--</td>
-                          <td>0.01</td>
-                        </tr>
-                        <tr>
-                          <td>Cola</td>
-                          <td>41</td>
-                          <td>10.1</td>
-                          <td>--</td>
-                          <td>--</td>
-                          <td>--</td>
-                          <td>--</td>
-                          <td>0.04</td>
-                        </tr>
-                        <tr>
-                          <td>Beer</td>
-                          <td>38</td>
-                          <td>2.7</td>
-                          <td>--</td>
-                          <td>0.3</td>
-                          <td>--</td>
-                          <td>7</td>
-                          <td>0.038</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="container-fluid testimonials">
-          <div class="container">
-            <h2 class="heading-secondary" style="color: #ffffff">
-              “ENJOY THE PREMIUM TASTE OF MEGA MALT!”
-            </h2>
-            <div class="row">
-              <div class="column">
-                <img src="../imgs/IMG_0372.png" alt="testimonial image" />
-                <img src="../imgs/DNWJ6194.JPG" alt="testimonial image" />
-                <img src="../imgs/IMG_3811.png" alt="testimonial image" />
-                <img src="../imgs/IMG_0260.png" alt="testimonial image" />
-                <video
-                  controls
-                  class="video"
-                  preload="metadata"
-                  poster="../imgs/IMG_3608-0001.png"
-                >
-                  <source src="../imgs/IMG_3608.MOV" /></video
-                ><img src="../imgs/IMG_0242.JPEG" alt="testimonial image" />
-              </div>
-
-              <div class="column">
-                <video
-                  controls
-                  class="video"
-                  preload="metadata"
-                  poster="../imgs/IMG_0489-0001.png"
-                >
-                  <source src="../imgs/IMG_0489.MOV" />
-                </video>
-                <img src="../imgs/IMG_1078.JPG" alt="testimonial image" />
-                <img src="../imgs/IMG_7949.png" alt="testimonial image" />
-                <video
-                  controls
-                  class="video"
-                  preload="metadata"
-                  poster="../imgs/NEHH0597-0001.png"
-                >
-                  <source src="../imgs/NEHH0597.MOV" />
-                </video>
-                <img src="../imgs/IMG_1075.JPG" alt="testimonial image" />
-              </div>
-
-              <div class="column">
-                <img src="../imgs/EYCN0408.JPG" alt="testimonial image" />
-                <video
-                  controls
-                  class="video"
-                  preload="metadata"
-                  poster="/imgs/RFAX5706-0001.png"
-                >
-                  <source src="../imgs/RFAX5706.MOV" />
-                </video>
-                <img src="../imgs/XZBU5762.JPG" alt="testimonial image" />
-                <img src="../imgs/Frank-1.jpg" alt="testimonial image" />
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="container">
-          <div class="row cta-home">
-            <div class="col-auto text-center">
-              <h3 class="cta-head-home">Join the Mega Malt family!</h3>
-            </div>
-            <div class="col text-center">
-              <a
-                role="button"
-                class="btn cta-btn-home btn--full"
-                href="distributor.html"
-              >
-                Become a Distributor
-              </a>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer id="contact" class="container footer">
-        <div class="row row-cols-2 row-cols-md-3 foot-box">
-          <div class="col">
-            <a href="index.html">
-              <img
-                class="foot-logo"
-                src="../imgs/MegaMalt-Logo-lg.png"
-                alt="logo"
-            /></a>
-          </div>
-          <div class="col">
-            <div class="row">
-              <div class="col">
-                <h3 class="heading-tertiary h3">Contact Us:</h3>
-              </div>
-            </div>
-            <div class="contacts">
-              <div class="row cta-contact-textbox">
-                <div class="col">
-                  <i class="fa fa-solid fa-phone"></i>
-                  <a href="tel:832-886-5901" class="contact-textbox"
-                    >832-886-5901</a
-                  >
-                </div>
-              </div>
-              <div class="row cta-contact-textbox">
-                <div class="col">
-                  <i class="fa fa-solid fa-envelope"></i>
-                  <a href="mailto:megamalt@yahoo.com" class="contact-textbox"
-                    >megamalt@yahoo.com</a
-                  >
-                </div>
-              </div>
-              <div class="row cta-contact-textbox">
-                <div id="fax" class="col">
-                  <i class="fa fa-solid fa-print"></i>
-                  F:832-451-6103
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="row">
-              <div class="col">
-                <h3 class="heading-tertiary h3">Follow Us:</h3>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <a href="https://www.facebook.com/mega.malt/"
-                  ><i class="social fa-3x fa fa-facebook-square"></i
-                ></a>
+            <div class="row cta-contact-textbox">
+              <div id="fax" class="col">
+                <i class="fa fa-solid fa-print"></i>
+                F:832-451-6103
               </div>
             </div>
           </div>
         </div>
-        <div class="row copy">
-          <div class="col">
-            Copyright &copy;<span class="year"> 2022</span> Mega Malt. All
-            rights reserved.
+        <div class="col">
+          <div class="row">
+            <div class="col">
+              <h3 class="heading-tertiary h3">Follow Us:</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <a href="https://www.facebook.com/mega.malt/"><i class="social fa-3x fa fa-facebook-square"></i></a>
+            </div>
           </div>
         </div>
-      </footer>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="../js/index.js"></script>
-  </body>
+      </div>
+      <div class="row copy">
+        <div class="col">
+          Copyright &copy;<span class="year"> 2022</span> Mega Malt. All
+          rights reserved.
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../js/index.js"></script>
+</body>
+
 </html>
