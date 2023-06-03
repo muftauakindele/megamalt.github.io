@@ -1,0 +1,3 @@
+[submodule "megamalt"]
+  path = megamalt
+  url = https://github.com/muftauakindele/megamalt.github.io
