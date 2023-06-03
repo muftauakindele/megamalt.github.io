@@ -58,7 +58,11 @@
     <main>
       <section class="hero">
         <div class="vid-wrapper">
-          <video autoplay muted loop controls poster="/imgs/MMPT-VIDEO-0001.webp" src="../imgs/MMPT-VIDEO.webm"></video>
+          <!-- <video id="myVideo" autoplay muted controls poster="/imgs/MMPT-VIDEO-0001.webp" src="../imgs/MMPT-VIDEO.webm"></video> -->
+          <video id="myVideo" autoplay muted controls poster="/imgs/MMPT-VIDEO-0001.webp">
+             <source src="../imgs/MMPT-VIDEO.mp4" type="video/mp4">
+             <source src="../imgs/MMPT-VIDEO.webm" type="video/webm">
+          </video> 
         </div>
         <div class="hero-text">
           <a href="distributor.html" role="button" class="btn btn--full">Become a Distributor</a>
@@ -353,6 +357,14 @@
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="../js/index.js"></script>
+  <script>
+    var video = document.getElementById('myVideo');
+  
+    video.addEventListener('ended', function() {
+      video.currentTime = 0; // Reset the video to the beginning
+      video.play(); // Play the video again
+    });
+  </script>
 </body>
 
 </html>
